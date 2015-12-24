@@ -1,0 +1,234 @@
+.carousel-3d-container {
+  position: relative;
+  top: 15%;
+  transform: rotate(-90deg);
+}
+
+.carousel-3d {
+  position                : relative;
+  margin                  : 0 auto;
+  -webkit-transform-style : preserve-3d;
+  -moz-transform-style    : preserve-3d;
+  -o-transform-style      : preserve-3d;
+  -ms-transform-style     : preserve-3d;
+  transform-style         : preserve-3d;
+  -webkit-perspective     : 1000px;
+  -moz-perspective        : 1000px;
+  -o-perspective          : 1000px;
+  -ms-perspective         : 1000px;
+  perspective             : 1000px;
+
+  &.ng-hide {
+    opacity : 0;
+  }
+
+  &.ng-hide-remove {
+    transition : opacity linear 1000ms;
+  }
+
+  &.ng-hide-add {
+    transition : opacity linear 500ms;
+  }
+}
+
+.carousel-3d .slide-3d {
+  background-color: white;
+  border-radius : 4px;
+  border-color  : #000;
+  border-color  : rgba(0, 0, 0, 0.4);
+  border-style  : solid;
+}
+
+// Loading
+/*====================================*/
+// @-webkit-keyframes uil-rolling-anim {
+//   0% {
+//     -ms-transform     : rotate(0deg);
+//     -moz-transform    : rotate(0deg);
+//     -webkit-transform : rotate(0deg);
+//     -o-transform      : rotate(0deg);
+//     transform         : rotate(0deg);
+//   }
+//   50% {
+//     -ms-transform     : rotate(180deg);
+//     -moz-transform    : rotate(180deg);
+//     -webkit-transform : rotate(180deg);
+//     -o-transform      : rotate(180deg);
+//     transform         : rotate(180deg);
+//   }
+//   100% {
+//     -ms-transform     : rotate(360deg);
+//     -moz-transform    : rotate(360deg);
+//     -webkit-transform : rotate(360deg);
+//     -o-transform      : rotate(360deg);
+//     transform         : rotate(360deg);
+//   }
+// }
+
+// @-webkit-keyframes uil-rolling-anim {
+//   0% {
+//     -ms-transform     : rotate(0deg);
+//     -moz-transform    : rotate(0deg);
+//     -webkit-transform : rotate(0deg);
+//     -o-transform      : rotate(0deg);
+//     transform         : rotate(0deg);
+//   }
+//   50% {
+//     -ms-transform     : rotate(180deg);
+//     -moz-transform    : rotate(180deg);
+//     -webkit-transform : rotate(180deg);
+//     -o-transform      : rotate(180deg);
+//     transform         : rotate(180deg);
+//   }
+//   100% {
+//     -ms-transform     : rotate(360deg);
+//     -moz-transform    : rotate(360deg);
+//     -webkit-transform : rotate(360deg);
+//     -o-transform      : rotate(360deg);
+//     transform         : rotate(360deg);
+//   }
+// }
+
+// @-moz-keyframes uil-rolling-anim {
+//   0% {
+//     -ms-transform     : rotate(0deg);
+//     -moz-transform    : rotate(0deg);
+//     -webkit-transform : rotate(0deg);
+//     -o-transform      : rotate(0deg);
+//     transform         : rotate(0deg);
+//   }
+//   50% {
+//     -ms-transform     : rotate(180deg);
+//     -moz-transform    : rotate(180deg);
+//     -webkit-transform : rotate(180deg);
+//     -o-transform      : rotate(180deg);
+//     transform         : rotate(180deg);
+//   }
+//   100% {
+//     -ms-transform     : rotate(360deg);
+//     -moz-transform    : rotate(360deg);
+//     -webkit-transform : rotate(360deg);
+//     -o-transform      : rotate(360deg);
+//     transform         : rotate(360deg);
+//   }
+// }
+
+// @-ms-keyframes uil-rolling-anim {
+//   0% {
+//     -ms-transform     : rotate(0deg);
+//     -moz-transform    : rotate(0deg);
+//     -webkit-transform : rotate(0deg);
+//     -o-transform      : rotate(0deg);
+//     transform         : rotate(0deg);
+//   }
+//   50% {
+//     -ms-transform     : rotate(180deg);
+//     -moz-transform    : rotate(180deg);
+//     -webkit-transform : rotate(180deg);
+//     -o-transform      : rotate(180deg);
+//     transform         : rotate(180deg);
+//   }
+//   100% {
+//     -ms-transform     : rotate(360deg);
+//     -moz-transform    : rotate(360deg);
+//     -webkit-transform : rotate(360deg);
+//     -o-transform      : rotate(360deg);
+//     transform         : rotate(360deg);
+//   }
+// }
+
+// @-moz-keyframes uil-rolling-anim {
+//   0% {
+//     -ms-transform     : rotate(0deg);
+//     -moz-transform    : rotate(0deg);
+//     -webkit-transform : rotate(0deg);
+//     -o-transform      : rotate(0deg);
+//     transform         : rotate(0deg);
+//   }
+//   50% {
+//     -ms-transform     : rotate(180deg);
+//     -moz-transform    : rotate(180deg);
+//     -webkit-transform : rotate(180deg);
+//     -o-transform      : rotate(180deg);
+//     transform         : rotate(180deg);
+//   }
+//   100% {
+//     -ms-transform     : rotate(360deg);
+//     -moz-transform    : rotate(360deg);
+//     -webkit-transform : rotate(360deg);
+//     -o-transform      : rotate(360deg);
+//     transform         : rotate(360deg);
+//   }
+// }
+
+// @-webkit-keyframes uil-rolling-anim {
+//   0% {
+//     -ms-transform     : rotate(0deg);
+//     -moz-transform    : rotate(0deg);
+//     -webkit-transform : rotate(0deg);
+//     -o-transform      : rotate(0deg);
+//     transform         : rotate(0deg);
+//   }
+//   50% {
+//     -ms-transform     : rotate(180deg);
+//     -moz-transform    : rotate(180deg);
+//     -webkit-transform : rotate(180deg);
+//     -o-transform      : rotate(180deg);
+//     transform         : rotate(180deg);
+//   }
+//   100% {
+//     -ms-transform     : rotate(360deg);
+//     -moz-transform    : rotate(360deg);
+//     -webkit-transform : rotate(360deg);
+//     -o-transform      : rotate(360deg);
+//     transform         : rotate(360deg);
+//   }
+// }
+
+// @-o-keyframes uil-rolling-anim {
+//   0% {
+//     -ms-transform     : rotate(0deg);
+//     -moz-transform    : rotate(0deg);
+//     -webkit-transform : rotate(0deg);
+//     -o-transform      : rotate(0deg);
+//     transform         : rotate(0deg);
+//   }
+//   50% {
+//     -ms-transform     : rotate(180deg);
+//     -moz-transform    : rotate(180deg);
+//     -webkit-transform : rotate(180deg);
+//     -o-transform      : rotate(180deg);
+//     transform         : rotate(180deg);
+//   }
+//   100% {
+//     -ms-transform     : rotate(360deg);
+//     -moz-transform    : rotate(360deg);
+//     -webkit-transform : rotate(360deg);
+//     -o-transform      : rotate(360deg);
+//     transform         : rotate(360deg);
+//   }
+// }
+
+// @keyframes uil-rolling-anim {
+//   0% {
+//     -ms-transform     : rotate(0deg);
+//     -moz-transform    : rotate(0deg);
+//     -webkit-transform : rotate(0deg);
+//     -o-transform      : rotate(0deg);
+//     transform         : rotate(0deg);
+//   }
+//   50% {
+//     -ms-transform     : rotate(180deg);
+//     -moz-transform    : rotate(180deg);
+//     -webkit-transform : rotate(180deg);
+//     -o-transform      : rotate(180deg);
+//     transform         : rotate(180deg);
+//   }
+//   100% {
+//     -ms-transform     : rotate(360deg);
+//     -moz-transform    : rotate(360deg);
+//     -webkit-transform : rotate(360deg);
+//     -o-transform      : rotate(360deg);
+//     transform         : rotate(360deg);
+//   }
+// }

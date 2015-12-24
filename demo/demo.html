@@ -1,0 +1,118 @@
+<!doctype html>
+<html ng-app="demo">
+<head>
+    <meta charset="utf-8">
+    <title>Angular Carousel 3D | Directive demo page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Angular Carousel 3D directive. Demo page with properties">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Angular">
+    <meta name="author" content="Vladimir Bujanovic">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../dist/carousel-3d.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+</head>
+<body ng-controller="AppController as app">
+
+<div class="container">
+
+    <carousel3d ng-model="app.slides"
+                options="app.options"
+                on-selected-click="app.selectedClick(index)"
+                on-slide-change="app.slideChanged(index)"
+                on-last-slide="app.lastSlide(index)"
+                on-before-change="app.beforeChange(index)">
+    </carousel3d>
+
+<!--     <div class="row">
+        <div class="col-xs-6">
+
+            <h3>Directive properties</h3>
+
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group">
+                        <label for="numVisible">Visible:</label>
+                        <input type="number" ng-model="app.options.visible" id="numVisible" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="numWidth">Width:</label>
+                        <input type="number" ng-model="app.options.width" id="numWidth" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numHeight">Height:</label>
+                        <input type="number" ng-model="app.options.height" id="numHeight" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numStartSlide">Start slide:</label>
+                        <input type="number" ng-model="app.options.startSlide" id="numStartSlide" class="form-control">
+                    </div>
+                </div>
+                <div class="col-xs-6">
+
+                    <div class="form-group">
+                        <label for="numBorder">Border size:</label>
+                        <input type="number" ng-model="app.options.border" id="numBorder" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numSpace">Space between slides:</label>
+                        <input type="number" ng-model="app.options.space" id="numSpace" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="numPerspective">Slide perspective:</label>
+                        <input type="number" ng-model="app.options.perspective" id="numPerspective" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dir">Carousel direction:</label>
+                        <input type="text" ng-model="app.options.dir" id="dir" class="form-control">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+
+            <h3>Directive ngModel slides</h3>
+
+
+            <div class="form-group">
+                <label for="slideSrc">Image source:</label>
+
+                <input type="text" ng-model="app.slideSrc" id="slideSrc" placeholder="Image source" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <button ng-click="app.addImage(app.slideSrc)" class="btn btn-md btn-success" ng-disabled="!app.slideSrc">Add slide</button>
+            </div>
+
+            <ol class="list">
+                <li ng-repeat="image in app.slides track by $index" class="clearfix">
+                    <span>Slide {{$index}}</span>
+                    <button type="button" class="btn btn-sm btn-danger pull-right"
+                            ng-click="app.removeImage($index)">Remove</button>
+                </li>
+            </ol>
+        </div>
+ -->
+     </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="../bower_components/angular/angular.js"></script>
+<script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+
+<script src="../bower_components/angular-swipe/dist/angular-swipe.js"></script>
+<script src="../dist/carousel-3d.js"></script>
+
+<script src="demo.js"></script>
+
+</body>
+</html>
